@@ -1,0 +1,128 @@
+
+
+
+*{
+    transition: all 0.1s ease-out;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+
+}
+
+
+:root{
+    --section-color:white;
+    --bg-color:#F4F6FA;
+    --text-color:#313E51;
+    --bg-image:url('.//public/assets/pattern-background-desktop-light.svg');
+    --sun-icon:"/public/assets/icon-sun-dark.svg";
+    --moon-icon:"/public/assets/icon-moon-dark.svg"
+
+}
+
+
+
+[data-theme="dark"]{
+    --section-color:#626C7F;
+    --bg-color:#3B4D66;
+     --text-color:#FFFFFF;
+    --bg-image:url('..//public/assets/pattern-background-desktop-dark.svg');
+    --sun-icon:"/public/assets/icon-sun-light.svg";
+    --moon-icon:"/public/assets/icon-moon-light.svg"
+}
+
+.sun{
+  background-image: var(--sun-icon);
+  position: absolute;
+  top: 3.2em;
+  right: 14.2em;
+}
+
+.moon{
+  background-image:var(--moon-icon);
+  position: absolute;
+  top: 3.2em;
+  right: 7.5em;
+}
+
+body{
+  max-width: 1160px;
+  margin-left: 80px;
+  margin-right: 80px;
+    font-family: Rubik;
+  background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+}
+
+.title{
+  margin-top: 150px;
+}
+
+.title h2{
+font-weight: 300;
+font-size: 54px;
+line-height: 64px;
+letter-spacing: 2px;
+}
+
+.title h1{
+font-size: 54px;
+line-height: 64px;
+letter-spacing: 2px;
+margin-bottom: 30px;
+}
+
+.title p{
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.hero .elements{
+  margin-top: 170px;
+  margin-right: 50px;
+}
+
+
+.section{
+display: flex;
+justify-content: space-between;
+align-items: center;
+place-items: center;
+cursor: pointer;
+}
+.section .h2{
+  display: flex;
+  align-items:center;
+  gap: 20px;
+  
+   background-color:var(--section-color);
+   margin-bottom: 15px;
+  margin-right: -50px;
+ border-radius: 20px;
+   padding: 20px 20px 20px 30px;
+   width: 504px;
+}
+
+.section .quizzes{
+  text-decoration: none;
+
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  margin-top: 250px;
+}
