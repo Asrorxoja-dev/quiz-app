@@ -20,7 +20,7 @@ function Result({ title, color, icon, correctAnswerCount, questionsLength }) {
           <div className="big-text">{correctAnswerCount}</div>
           <p>out of {questionsLength}</p>
         </div>
-        <Link className="btn" to="/">
+        <Link className="button" to="/">
           Play Again
         </Link>
       </div>
